@@ -143,4 +143,4 @@ document.querySelector('input').addEventListener('keyup', function (e) {
 });
 
 // Configuración inicial del clima
-getWeather("San javier");
+getWeather("Guercif");
