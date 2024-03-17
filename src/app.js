@@ -1,4 +1,4 @@
-import './style.css';
+
 
 // Factory function para crear objetos con datos del clima
 
