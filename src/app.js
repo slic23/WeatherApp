@@ -66,7 +66,7 @@ function afterCall(tempData) {
 async function getWeather(name) {
     try {
         document.querySelector('input').value = "";
-        const promesa = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b87bf8028f854a0c898145318241103&q=${name}&days=5`, {mode: 'cors'});
+        const promesa = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b87bf8028f854a0c898145318241103&q=${name}&days=5`, {mode: 'cors'});
         const datos = await promesa.json();
         const tempData = WeatherData(datos.current.temp_f, datos.current.temp_c, datos.current.feelslike_c, datos.current.feelslike_f);
         document.querySelector('.feels').textContent = tempData.feelslike_c + "°C";
